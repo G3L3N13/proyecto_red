@@ -126,7 +126,6 @@ if (inputFoto.files && inputFoto.files[0]) {
         timer: 1000,
         showConfirmButton: false
     });
-        // NOTIFICAR
-    notificar("Has actualizado tu perfil");
 
 });
+
