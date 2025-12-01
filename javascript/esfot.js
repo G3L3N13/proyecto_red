@@ -103,10 +103,14 @@ function manejarPublicacionDOM(event) {
         showConfirmButton: false
     });
     event.target.reset();
+        //NOTIFICAR
+    notificar("Has añadido material en tu página");
+    event.target.reset();
 }
 
 document.getElementById("usuario").textContent = usuario.usuario || "Nombre Usuario";
 document.querySelectorAll('[id = "fotoPerfil"]').forEach(el => {
     el.src = usuario.foto;
 });
+
 
