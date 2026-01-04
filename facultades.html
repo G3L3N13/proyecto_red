@@ -1,101 +1,208 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Facultades | ALU</title>
-  <link rel="stylesheet" href="css/facultades.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-  <main class="facultades">
-    <header class="facultades-header">
-      <div class="facultades-bar">
-        <a href="perfil.html" class="btn-chip">
-          <span class = "perfil"><img  alt="perfil" src="imagenes/perfil.png" id="fotoPerfil"></span>
-          <span><b>Perfil</b></span>
+
+<body class="bg-[#101214] text-[#f9f9f9] font-mono">
+  <main class="px-4 pb-10">
+    <header class=" facultades-header pt-2">
+      <div class="
+        flex flex-col md:flex-row
+        items-center justify-between
+        gap-3
+        bg-[#21252ac2]
+        px-4 py-3
+        rounded-b-2xl md:rounded-b-[40px]
+        shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+        border border-[rgba(255,255,255,0.1)]
+      ">
+
+        <!-- Perfil -->
+        <a href="perfil.html" class="
+          inline-flex items-center gap-2
+          px-4 py-2
+          rounded-full
+          bg-[#21252ac2]
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          text-sm
+          transition
+          hover:bg-white/15
+        ">
+          <img src="imagenes/perfil.png" alt="perfil" id="fotoPerfil" class="w-5 h-5 rounded-full">
+          <span class="hidden md:inline font-bold">Perfil</span>
         </a>
-        <h1 class="facultades-title">Bienvenido a ALU</h1>
-        <a href="index.html" class="btn-chip">
-          <span><b>Ajustes</b></span>
+        <h1 class="text-2xl md:text-[32px] font-semibold tracking-wider my-1">
+          Bienvenido a ALU</h1>
+
+        <a href="index.html" class="
+          inline-flex items-center gap-2
+          px-4 py-2
+          rounded-full
+          bg-[#21252ac2]
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          text-sm
+          transition
+          hover:bg-white/15
+        ">
+          <span class="font-bold">Ajustes</span>
           <span>⚙️</span>
         </a>
+
       </div>
-      <h2 class="facultades-pill"><b>Facultades</b></h2>
+
+
+      <h2 class="
+        mx-auto my-5
+        w-full md:w-[88%] max-w-xl
+        text-center
+        bg-[#21252ac2]
+        px-5 py-3
+        rounded-full
+        text-2xl
+        tracking-wide
+        border border-[rgba(255,255,255,0.1)]
+        shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+      ">
+        <b>Facultades</b>
+      </h2>
+
     </header>
 
-    <ul class="facultades-grid">
+
+    <ul class="
+      grid
+      grid-cols-1 md:grid-cols-3
+      gap-x-10 gap-y-9
+      max-w-6xl
+      mx-auto
+      mt-6
+    ">
+
       <!-- Tarjeta 1 -->
       <li class="fac-card">
-        <a href="esfot.html" class="fac-card-link">
-          <img class="fac-card-img" src="imagenes/ESFOT.png" alt="Escuela de Formación de Tecnólogos">
+        <a href="esfot.html" class="
+          block rounded-2xl overflow-hidden
+          bg-gray-200
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          transition
+          hover:-translate-y-0.5
+          hover:shadow-[0_10px_24px_rgba(171,171,171,0.6)]
+        ">
+          <img src="imagenes/ESFOT.png" alt="Escuela de Formación de Tecnólogos" class="w-full object-cover border-b border-[rgba(255,255,255,0.1)]">
         </a>
       </li>
 
       <!-- Tarjeta 2 -->
       <li class="fac-card">
-        <a href="#" class="fac-card-link">
-          <img class="fac-card-img" src="imagenes/CIENCIAS-02.png" alt="Facultad de Ciencias">
+        <a href="#" class="block rounded-2xl overflow-hidden bg-gray-200
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          transition hover:-translate-y-0.5
+          hover:shadow-[0_10px_24px_rgba(171,171,171,0.6)]">
+          <img src="imagenes/CIENCIAS-02.png" alt="Facultad de Ciencias"
+            class="w-full object-cover border-b border-[rgba(255,255,255,0.1)]">
         </a>
       </li>
 
       <!-- Tarjeta 3 -->
       <li class="fac-card">
-        <a href="#" class="fac-card-link">
-          <img class="fac-card-img" src="imagenes/ADMINISTRATIVAS.png" alt="Facultad de Ciencias Administrativas">
+        <a href="#" class="block rounded-2xl overflow-hidden bg-gray-200
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          transition hover:-translate-y-0.5
+          hover:shadow-[0_10px_24px_rgba(171,171,171,0.6)]">
+          <img src="imagenes/ADMINISTRATIVAS.png" alt="Facultad de Ciencias Administrativas"
+            class="w-full object-cover border-b border-[rgba(255,255,255,0.1)]">
         </a>
       </li>
 
       <!-- Tarjeta 4 -->
       <li class="fac-card">
-        <a href="#" class="fac-card-link">
-          <img class="fac-card-img" src="imagenes/PETROLEO.png" alt="Facultad de Ingeniería en Geología y Petróleos">
-
+        <a href="#" class="block rounded-2xl overflow-hidden bg-gray-200
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          transition hover:-translate-y-0.5
+          hover:shadow-[0_10px_24px_rgba(171,171,171,0.6)]">
+          <img src="imagenes/PETROLEO.png" alt="Facultad de Ingeniería en Geología y Petróleos"
+            class="w-full object-cover border-b border-[rgba(255,255,255,0.1)]">
         </a>
       </li>
 
       <!-- Tarjeta 5 -->
       <li class="fac-card">
-        <a href="#" class="fac-card-link">
-          <img class="fac-card-img" src="imagenes/CIVIL-10-10.jpg" alt="Facultad de Ingeniería Civil y Ambiental">
+        <a href="#" class="block rounded-2xl overflow-hidden bg-gray-200
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          transition hover:-translate-y-0.5
+          hover:shadow-[0_10px_24px_rgba(171,171,171,0.6)]">
+          <img src="imagenes/CIVIL-10-10.jpg" alt="Facultad de Ingeniería Civil y Ambiental"
+            class="w-full object-cover border-b border-[rgba(255,255,255,0.1)]">
         </a>
       </li>
 
       <!-- Tarjeta 6 -->
       <li class="fac-card">
-        <a href="#" class="fac-card-link">
-          <img class="fac-card-img" src="imagenes/SISTEMAS.png" alt="Facultad de Ingeniería de Sistemas">
-
+        <a href="#" class="block rounded-2xl overflow-hidden bg-gray-200
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          transition hover:-translate-y-0.5
+          hover:shadow-[0_10px_24px_rgba(171,171,171,0.6)]">
+          <img src="imagenes/SISTEMAS.png" alt="Facultad de Ingeniería de Sistemas"
+            class="w-full object-cover border-b border-[rgba(255,255,255,0.1)]">
         </a>
       </li>
 
       <!-- Tarjeta 7 -->
       <li class="fac-card">
-        <a href="#" class="fac-card-link">
-          <img class="fac-card-img" src="imagenes/ELECTRICA.png" alt="Facultad de Ingeniería Eléctrica y Electrónica">
-
+        <a href="#" class="block rounded-2xl overflow-hidden bg-gray-200
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          transition hover:-translate-y-0.5
+          hover:shadow-[0_10px_24px_rgba(171,171,171,0.6)]">
+          <img src="imagenes/ELECTRICA.png" alt="Facultad de Ingeniería Eléctrica y Electrónica"
+            class="w-full object-cover border-b border-[rgba(255,255,255,0.1)]">
         </a>
       </li>
 
       <!-- Tarjeta 8 -->
       <li class="fac-card">
-        <a href="#" class="fac-card-link">
-          <img class="fac-card-img" src="imagenes/MECANICA.png" alt="Facultad de Ingeniería Mecánica">
+        <a href="#" class="block rounded-2xl overflow-hidden bg-gray-200
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          transition hover:-translate-y-0.5
+          hover:shadow-[0_10px_24px_rgba(171,171,171,0.6)]">
+          <img src="imagenes/MECANICA.png" alt="Facultad de Ingeniería Mecánica"
+            class="w-full object-cover border-b border-[rgba(255,255,255,0.1)]">
         </a>
       </li>
 
       <!-- Tarjeta 9 -->
       <li class="fac-card">
-        <a href="#" class="fac-card-link">
-          <img class="fac-card-img" src="imagenes/QUIMICA.png" alt="Facultad de Ingeniería Química y Agroindustria">
+        <a href="#" class="block rounded-2xl overflow-hidden bg-gray-200
+          border border-[rgba(255,255,255,0.1)]
+          shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          transition hover:-translate-y-0.5
+          hover:shadow-[0_10px_24px_rgba(171,171,171,0.6)]">
+          <img src="imagenes/QUIMICA.png" alt="Facultad de Ingeniería Química y Agroindustria"
+            class="w-full object-cover border-b border-[rgba(255,255,255,0.1)]">
         </a>
       </li>
-      
+
     </ul>
+
   </main>
-<script src="javascript/facultades.js"></script>
-
-  
 
 
+  <script src="javascript/facultades.js"></script>
 </body>
+
 </html>
